@@ -1,3 +1,6 @@
+This problem involves finding the median of two sorted arrays efficiently. Here's an implementation of the `findMedianSortedArrays` method using the concept of binary search:
+
+```python
 from typing import List
 
 class Solution:
@@ -29,3 +32,6 @@ class Solution:
                 else: min_of_right = min(nums1[i], nums2[j])
 
                 return (max_of_left + min_of_right) / 2.0
+```
+
+This code finds the median of two sorted arrays, `nums1` and `nums2`, in O(log(min(m, n)) time complexity, where `m` and `n` are the lengths of the two arrays. You can create an instance of the `Solution` class and call the `findMedianSortedArrays` method with your input arrays to get the median.
