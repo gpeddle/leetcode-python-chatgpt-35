@@ -92,6 +92,7 @@ from .solution import Solution
 test_data = [
     {{
         'name': 'Example 1',
+        'input': [0, 0],
         'expected': [0, 0]
     }},
     {{
