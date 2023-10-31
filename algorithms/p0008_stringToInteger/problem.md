@@ -32,7 +32,7 @@ Explanation: The underlined characters are what is read in, the caret is the cur
     Step 3: "42" ("42" is read in)
 
     The parsed integer is 42.
-    
+
     Since 42 is in the range [-231, 231 - 1], the final result is 42.
 
 ## Example 2:
@@ -73,7 +73,15 @@ Explanation:
 
  
 
-Constraints:
+## Constraints:
 
     0 <= s.length <= 200
     s consists of English letters (lower-case and upper-case), digits (0-9), ' ', '+', '-', and '.'.
+
+## Result:
+
+Accepted on first try
+
+Runtime: 57ms, Beats 6.78%of users with Python3
+
+Memory: 16.17MB, Beats 81.50%of users with Python3
