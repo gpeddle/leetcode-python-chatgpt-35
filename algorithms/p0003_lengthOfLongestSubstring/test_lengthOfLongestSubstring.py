@@ -13,7 +13,7 @@ test_data = [
     {
         'name': 'Example 2',
         'input': 'bbbbb',
-        'expected': 3
+        'expected': 1
     },
     {
         'name': 'Example 3',
