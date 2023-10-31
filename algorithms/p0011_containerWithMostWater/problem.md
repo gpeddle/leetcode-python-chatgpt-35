@@ -34,4 +34,8 @@ Output: 1
 
 ## Result
 
-TODO
+Accepted on first try
+
+Runtime: 623ms, Beats 14.14%of users with Python3
+
+Memory: 29.23MB, Beats 57.03%of users with Python3
