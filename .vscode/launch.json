@@ -1,0 +1,13 @@
+{
+    "name": "Python Pytest",
+    "type": "python",
+    "request": "launch",
+    "program": "${workspaceFolder}/algorithms/p0002_addTwoNumbers/test_solution.py",
+    "args": [
+        "-k", "test_solution"  // This specifies the name of the test function to run
+    ],
+    "console": "integratedTerminal",
+    "env": {
+        "PYTHONPATH": "${workspaceFolder}"
+    }
+}

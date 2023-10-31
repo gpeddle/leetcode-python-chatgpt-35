@@ -1,0 +1,7 @@
+{
+    "python.testing.pytestArgs": [
+        "algorithms/p0002_addTwoNumbers"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}
