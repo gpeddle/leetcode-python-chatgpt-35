@@ -14,7 +14,7 @@ test_data = [
     {
         'name': 'Example 2',
         's': 'PAYPALISHIRING',
-        'numRows': 4
+        'numRows': 4,
         'expected': 'PINALSIGYAHRPI'
     },
     {
