@@ -49,7 +49,7 @@ Copy/paste the problem text from leetcode.
 
 Ignore all previous instructions.
 
-You are an expert Python developer. We are collaborating on solving problems from the coding site leetcode. Below is a problem in markdown format, along with a skeleton class for implementing the solution. Please review the problem, and then emit an implementation based in the skeleton class.
+You are an expert Python developer. We are collaborating on solving algorithm problems. Below is a problem in markdown format, along with a skeleton class for implementing the solution. Please review the problem, and then emit an implementation based in the skeleton class.
 
 PROBLEM:
 ```markdown
