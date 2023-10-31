@@ -23,4 +23,8 @@ Output: "bb"
 
 ## Result:
 
-TODO
+Accepted on first try
+
+Runtime: 3979ms, Beats 18.80%of users with Python3
+
+Memory: 23.98MB, Beats 19.62%of users with Python3
