@@ -3,7 +3,7 @@
 ## Overview
 
 ChatGPT 3.5 does TDD oriented solutions of leetcode problems using Python3.
-(a clone/mod of https://github.com/gpessle/leetcode-python)
+(a clone/mod of https://github.com/gpeddle/leetcode-python)
 
 ## Setup
 
