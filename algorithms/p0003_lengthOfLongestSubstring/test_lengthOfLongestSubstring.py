@@ -7,26 +7,23 @@ from .solution import Solution
 test_data = [
     {
         'name': 'Example 1',
-        'input': [0, 0],
-        'target': 0,
-        'expected': [0, 0]
+        'input': 'abcabcbb',
+        'expected': 3
     },
     {
         'name': 'Example 2',
-        'input': [0, 0],
-        'target': 0,
-        'expected': [0, 0]
+        'input': 'bbbbb',
+        'expected': 3
     },
     {
         'name': 'Example 3',
-        'input': [0, 0],
-        'target': 0,
-        'expected': [0, 0]
+        'input': 'pwwkew',
+        'expected': 3
     }
 ]
 
 @pytest.mark.parametrize("test_case", test_data)
 def test_solution(test_case):
     solution = Solution()
-    result = solution.lengthOfLongestSubstring(test_case['input'], test_case['target'])
+    result = solution.lengthOfLongestSubstring(test_case['input'])
     assert result == test_case['expected'], f"Test '{test_case['name']}' failed"
