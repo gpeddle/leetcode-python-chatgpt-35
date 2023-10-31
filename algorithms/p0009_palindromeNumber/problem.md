@@ -38,4 +38,8 @@ Follow up: Could you solve it without converting the integer to a string?
 
 ## Result
 
-TODO
+Accepted on first try
+
+Runtime: 58ms, Beats 67.50%of users with Python3
+
+Memory: 16.35MB, Beats 13.66%of users with Python3
