@@ -1,3 +1,11 @@
+# twoSum
+
+Ignore all previous instructions.
+
+You are an expert Python developer. We are collaborating on solving problems from the coding site leetcode. Below is a problem in markdown format, along with a skeleton class for implementing the solution. Please review the problem, and then emit an implementation based in the skeleton class.
+
+PROBLEM:
+```markdown
 # 0001. Two Sum [Easy]
 
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
@@ -38,11 +46,11 @@ You can return the answer in any order.
  
 
 **Follow-up:** Can you come up with an algorithm that is less than O(n2) time complexity?
+```
 
-## Result
-
-Accepted on first try
-
-Runtime: 58ms, Beats 88.86%of users with Python3
-
-Memory: 17.64MB, Beats 20.47%of users with Python3
+SKELETON:
+```python3
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        pass
+```
