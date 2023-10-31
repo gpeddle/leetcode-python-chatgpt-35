@@ -34,4 +34,8 @@ Explanation: merged array = [1,2,3,4] and median is (2 + 3) / 2 = 2.5.
 
 ## Result
 
-TODO
+Accepted on first try
+
+Runtime: 78ms, Beats 96.63%of users with Python3
+
+Memory: 16.52MB, Beats 46.57% of users with Python3

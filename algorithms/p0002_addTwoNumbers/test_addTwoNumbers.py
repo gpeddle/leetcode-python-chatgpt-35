@@ -30,4 +30,5 @@ test_data = [
 def test_solution(test_case):
     solution = Solution()
     result = solution.addTwoNumbers(test_case['l1'], test_case['l2'])
+    print(result)
     assert result == test_case['expected'], f"Test '{test_case['name']}' failed"
