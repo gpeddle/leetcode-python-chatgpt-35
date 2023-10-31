@@ -1,5 +1,8 @@
 # lengthOfLongestSubstring
 
+To find the length of the longest substring without repeating characters, you can use a sliding window approach. Here's an implementation of the `lengthOfLongestSubstring` method:
+
+```python
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         char_indices = {}  # Store the indices of characters in the string
@@ -20,3 +23,6 @@ class Solution:
             max_length = max(max_length, current_length)
 
         return max_length
+```
+
+This code iterates through the string using a sliding window and maintains a dictionary to store the indices of characters in the string. When a character is repeated, it updates the start of the window to the next index of the repeated character. It calculates the current window length and updates the maximum length. You can create an instance of the `Solution` class and call the `lengthOfLongestSubstring` method with your input string to find the length of the longest substring without repeating characters.

@@ -1,5 +1,13 @@
 # lengthOfLongestSubstring
 
+Ignore all previous instructions.
+
+You are an expert Python developer. We are collaborating on solving problems from the coding site leetcode. Below is a problem in markdown format, along with a skeleton class for implementing the solution. Please review the problem, and then emit an implementation based in the skeleton class.
+
+PROBLEM:
+```markdown
+# lengthOfLongestSubstring
+
 Given a string s, find the length of the longest
 substring
 without repeating characters.
@@ -38,10 +46,11 @@ Notice that the answer must be a substring, "pwke" is a subsequence and not a su
     0 <= s.length <= 5 * 104
     s consists of English letters, digits, symbols and spaces.
 
-## Results
+```
 
-Accepted on first try
-
-Runtime: 58ms, Beats 71.23%of users with Python3
-
-Memory: 16.32MB, Beats 54.48%of users with Python3
+SKELETON:
+```python3
+class Solution:
+    def lengthOfLongestSubstring(self, s: str) -> int:
+        pass
+```
