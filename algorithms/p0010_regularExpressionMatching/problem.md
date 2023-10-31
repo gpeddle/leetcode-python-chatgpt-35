@@ -43,4 +43,8 @@ Explanation: ".*" means "zero or more (*) of any character (.)".
 
 ## Result
 
-TODO
+Accepted on first try
+
+Runtime: 59ms, Beats 19.60%of users with Python3
+
+Memory: 16.30MB, Beats 79.31%of users with Python3
