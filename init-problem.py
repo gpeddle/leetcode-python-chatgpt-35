@@ -44,6 +44,32 @@ Copy/paste the problem text from leetcode.
 """
     },
     {
+        'filename': 'prompt.md',
+        'template': """# {problem_name}
+
+Ignore all previous instructions.
+
+You are an expert Python developer. We are collaborating on solving problems from the coding site leetcode. Below is a problem in markdown format, along with a skeleton class for implementing the solution. Please review the problem, and then emit an implementation based in the skeleton class.
+
+PROBLEM:
+```markdown
+
+```
+
+SKELETON:
+```python3
+
+```
+"""
+    },
+    {
+        'filename': 'response.md',
+        'template': """# {problem_name}
+
+Copy/paste the response from ChatGPT. 
+"""
+    },
+    {
         'filename': '__init__.py',
         'template': """"""
     },
@@ -51,13 +77,8 @@ Copy/paste the problem text from leetcode.
         'filename': f"solution.py",
         'template': """# {problem_name}
 
-from typing import List, Dict, Union
+# Copy/paste the skeleton class from leetcode
 
-class Solution:
-    # revise parameter list to match problem statement
-    def {problem_name}(self, input: List[int], target: int) -> List[int]:
-        # Implement your solution here
-        return [0, 1]
 """
     },
     {
@@ -71,20 +92,16 @@ from .solution import Solution
 test_data = [
     {{
         'name': 'Example 1',
-        'input': [0, 0],
-        'target': 0,
         'expected': [0, 0]
     }},
     {{
         'name': 'Example 2',
         'input': [0, 0],
-        'target': 0,
         'expected': [0, 0]
     }},
     {{
         'name': 'Example 3',
         'input': [0, 0],
-        'target': 0,
         'expected': [0, 0]
     }}
 ]
@@ -92,7 +109,7 @@ test_data = [
 @pytest.mark.parametrize("test_case", test_data)
 def test_solution(test_case):
     solution = Solution()
-    result = solution.{problem_name}(test_case['input'], test_case['target'])
+    result = solution.{problem_name}(test_case['input'])
     assert result == test_case['expected'], f"Test '{{test_case['name']}}' failed"
 """
     }
