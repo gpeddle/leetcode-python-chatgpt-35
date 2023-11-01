@@ -7,13 +7,7 @@ ChatGPT 3.5 does TDD oriented solutions of leetcode problems using Python3.
 
 This project uses the same approach outlined below, but using ChatGPT 3.5 as the code generator with a simple prompt sequence. 
 
-Using this approach, I completed 10 problems in about an hour… but most of the time was spent on file copy/paste. The actual time the AI was involved is probably about 5 minutes.
-
-ChatGPT got everything right on its first attempt.
-
-## Setup
-
-### Prerequisites
+## Setup/ Prerequisites
 
 - Python3
 - PyTest
@@ -70,22 +64,24 @@ The `prompt.md` file has an initial instuction and two sections: `PROBLEM` and `
 
 1. Copy the contents of `prompt.md` into a ChatGPT session. You do not need a new session because the prompt includes an initial reset instruction.
 2. Click 'Send' to submit the prompt
-3. Examine the output
-4. Copy the entire response into the `response.md` file.
-5. Copy the generated solution calss into the `solution.py` file.
+3. Examine the response
+4. Copy the entire response into the `response.md` file. (Hint: use copy icon)
+5. Copy the generated solution class into the `solution.py` file.
 
-## Working a problem locally
+## Working the problem locally
 
 1. Navigate to the problem subdirectory.
 2. Run `pytest -v` to test the solution
 3. Revise the `prompt.md` file if needed and resubmit to ChatGPT.
 4. Repeat #2 and #3 to arrive at a solution that satisfies the examples provided by leetcode.
 
-## Running a problem in leetcode
+## Running the problem in leetcode
 
-When the solution passes all the example `test_data` locally, copy the contents of `solution.py` and paste it into leetcode's editor, then click [Run].
+When the solution passes all the example `test_data` locally, 
 
-Observe that leetcode runs the solution and check to output for errors. Review any errors and revisit the solution locally to correct the method. 
+1. Copy the contents of `solution.py` and paste it into leetcode's editor, then click [Run].
+2. Observe that leetcode runs the solution and check to output for errors.
+3. Review any errors and revisit the solution locally to correct the method. 
 
 > Note that leetcode will only test your solution against the example `test_data` during [Run].
 
@@ -97,11 +93,13 @@ Once you are satisfied that the solution passes tests proposed by the example da
 
 ## Completing a problem
 
-Once you have completed a problem and passed the leetcode judge submission process, review the code folder and then commit to github. This maintains a clean set of solutions and a history of how you approached solving these problems.
+After completing a problem and passing the leetcode judge submission process, review the code folder and then commit to github. This maintains a clean set of solutions and a history of how you approached solving these problems.
 
 Congratulations! Your next step is to choose a new problem and repeat this process. 
 
-My own experience of approaching leetcode this way was centered around a time-boxed (45 minute) period in the early morning. If a problem was not complete at the end of my time-box, I would simply continue the next morning and work the cycle.
+Using this approach, I completed 10 problems in about an hour… but most of the time was spent on file copy/paste. The actual time the AI was involved is probably about 5 minutes.
+
+ChatGPT got everything right on its first attempt.
 
 ## Enjoy
 
