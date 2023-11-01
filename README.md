@@ -5,7 +5,11 @@
 ChatGPT 3.5 does TDD oriented solutions of leetcode problems using Python3.
 (a clone/mod of https://github.com/gpeddle/leetcode-python)
 
-This project uses the same approach outlined below, but using ChatGPT 3.5 as the code generator with a simple prompt sequence.
+This project uses the same approach outlined below, but using ChatGPT 3.5 as the code generator with a simple prompt sequence. 
+
+Using this approach, I completed 10 problems in about an hour… but most of the time was spent on file copy/paste. The actual time the AI was involved is probably about 5 minutes.
+
+ChatGPT got everything right on its first attempt.
 
 ## Setup
 
@@ -41,28 +45,45 @@ Each problem is set up in a subdirectory under the `algorithms` subfolder.
 The `init-problem.py` script does the following:
 
 1. Creates a new subdirectory for the problem
-2. Creates a `problem.md` file 
-3. Creates a solution file with a sample solution class
-4. Creates a tests file with a table-driven test
+2. Creates a `problem.md` file
+3. Creates a `prompt.md` file
+4. Creates a `response.md` file
+5. Creates a `solution.py` file with a sample solution class
+6. Creates a `tests_<problem_name>.py` file with a table-driven test
 
 ## Edit the initialized problem before working
 
 1. Navigate to the problem subdirectory.
-2. Copy/paste the problem description from leetcode into the `problem.md` file.
-3. Edit the test file `test_data` to match the examples from the leetcode problem description.
-4. Edit the solution class' method signature to match the example from leetcode
+2. Copy/paste/format the problem description from leetcode into the `problem.md` file.
+3. Edit the tests file to make `test_data` match the examples from the problem description.
+4. Copy/paste the solution class method signature from leetcode into `solution.py`
     - *The method signature must match the invocation in the test script!*
+
+## Format the prompt
+
+The `prompt.md` file has an initial instuction and two sections: `PROBLEM` and `SKELETON`. Each of the sections has a code fence just below the section heading. The code fences are in markdown and python respectively.
+
+1. Copy the contents of `problem.md` into the area below `PROBLEM:`
+2. Copy the contents of `solution.md` into the area below `SKELETON:`
+
+## Working with ChatGPT
+
+1. Copy the contents of `prompt.md` into a ChatGPT session. You do not need a new session because the prompt includes an initial reset instruction.
+2. Click 'Send' to submit the prompt
+3. Examine the output
+4. Copy the entire response into the `response.md` file.
+5. Copy the generated solution calss into the `solution.py` file.
 
 ## Working a problem locally
 
 1. Navigate to the problem subdirectory.
-2. Run `pytest -v` to test the existing solution
-3. Edit the solution file to implement/revise the solution function.
+2. Run `pytest -v` to test the solution
+3. Revise the `prompt.md` file if needed and resubmit to ChatGPT.
 4. Repeat #2 and #3 to arrive at a solution that satisfies the examples provided by leetcode.
 
 ## Running a problem in leetcode
 
-When the solution passes all the example `test_data` locally, copy the solution class and paste it into leetcode's editor, then click [Run].
+When the solution passes all the example `test_data` locally, copy the contents of `solution.py` and paste it into leetcode's editor, then click [Run].
 
 Observe that leetcode runs the solution and check to output for errors. Review any errors and revisit the solution locally to correct the method. 
 
